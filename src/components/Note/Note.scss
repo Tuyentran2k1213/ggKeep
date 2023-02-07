@@ -1,0 +1,54 @@
+.drag-area_note {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .inner-note {
+    border: 1px solid #e0e0e0;
+    width: 85%;
+    height: 75%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    transition: 0.3s;
+    &:hover {
+      box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302),0 1px 3px 1px rgba(60,64,67,0.149);
+      .note-check_icon {
+        opacity: 1;
+      }
+    }
+
+    .note-content {
+      height: 90%;
+      font-size: 1rem;
+    }
+    .note-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      .note-title_text {
+        width: 90%;
+      }
+      .header-icon_menu {
+        font-size: 1.5rem;
+      }
+    }
+    .note-check_icon {
+      position: absolute;
+      font-size: 1.5rem;
+      top: 0rem;
+      left: 0.2rem;
+      background-color: white;
+      opacity: 0;
+      transition: 0.3s;
+    }
+  }
+}

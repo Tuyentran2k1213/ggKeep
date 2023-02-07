@@ -1,0 +1,72 @@
+.input-note {
+  width: 37rem;
+  border-radius: 0.4rem;
+  padding: 0.2rem 1rem;
+  color: rgba(0,0,0,0.702);
+  margin: auto;
+  cursor: text;
+  box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302),0 2px 6px 2px rgba(60,64,67,0.149);
+  font-size: 1.12em;
+  &, .input-note_extension, .input-note-edit_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .input-note_extension {
+    .header-icon_menu {
+      font-size: 1.5rem;
+      margin-left: 1rem;
+    }
+  }
+
+  .input-note-edit_mode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &, .input-note-edit_title, .input-note-edit_text, .input-note-edit_text textarea, .input-note-edit_button{
+      width: 100%;
+    }
+
+    .input-note-edit_title {
+      .header-icon_menu {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      input {
+        width: 92%;
+        font-size: 1.2rem;
+        border: none;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    .input-note-edit_text textarea {
+      border: none;
+      resize: none;
+        &:focus {
+          outline: none;
+        }
+    }
+
+    .input-note-edit_button {
+      display: flex;
+      justify-content: flex-end;
+      button {
+        height: 2.5rem;
+        width: 5rem;
+        cursor: pointer;
+        margin-left: 0.5rem;
+        font-weight: bold;
+        border: none;
+        border-radius: 0.3rem;
+        background-color: transparent;
+        &:hover {
+          background-color: rgba(95,99,104,0.039);
+        }
+      }
+    }
+  }
+}

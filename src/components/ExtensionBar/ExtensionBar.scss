@@ -1,0 +1,25 @@
+.extension-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 1.5rem;
+  color: #757575;
+
+  .avatar {
+    margin-left: 3rem;
+  }
+  img {
+    border-radius: 100px;
+    height: 2.2rem;
+    width: 2.2rem;
+  }
+
+  .header-icon_menu{
+    padding: 0.7rem;
+    margin: 0rem 0.3rem;
+    :hover {
+      color: black;
+      transition: 0.5s;
+    }
+  }
+}
